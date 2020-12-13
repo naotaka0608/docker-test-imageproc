@@ -1,0 +1,9 @@
+version: "3"
+services:
+  app-test:
+    build: ./app-test
+    image: app-test-image
+    container_name: app-test-container
+    tty: true
+    ports:
+      - "3000:3000"
